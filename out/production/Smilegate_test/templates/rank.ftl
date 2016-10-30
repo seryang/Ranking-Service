@@ -16,13 +16,13 @@
     <#if list?? && list?size != 0>
         랭킹:ID:점수<hr>
         <#list list as l>
-        ${l.rank}:${l.user.userId}:#{l.user.score} <br>
+        #{l.rank}:${l.user.userId}:#{l.user.score} <br>
         </#list>
     <#-- 친구 리스트 -->
     <#elseif friendList?? && friendList?size != 0>
         ID:점수<hr>
         <#list friendList as l>
-        ${l.userId}:${l.score} <br>
+        ${l.userId}:#{l.score} <br>
         </#list>
     </#if>
     </h2>

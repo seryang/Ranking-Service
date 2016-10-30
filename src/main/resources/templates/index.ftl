@@ -9,8 +9,9 @@
 <div align="center">
     <h2>
         <form name="inputForm" action="javascript:;">
-            스코어 입력<button type="button" id="addInputBox">입력란 추가</button>
-            <br>
+            스코어 입력<br>
+            <button type="button" id="addInputBox">입력란 추가</button>
+            <button type="button" id="bulkInsert">임의 데이터 생성 (100 이상 10000 이하)</button><br>
             <div id="inputFormList">
                 <input type="text" name="inputScore" placeholder="ID:스코어"><br>
             </div>
@@ -132,6 +133,20 @@
                 }else{
                     alert("실패하였습니다");
                 }
+                location.reload();
+            },
+            error: function(){
+                alert("[error]");
+            }
+        })
+    })
+
+    $("#bulkInsert").click(function(){
+        $.ajax({
+            url: "rank/bulkInsert",
+            type: "post",
+            success: function(result){
+                alert(result + "개의 임의 데이터가 생성되었습니다.");
                 location.reload();
             },
             error: function(){
