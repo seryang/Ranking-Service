@@ -1,1 +1,1 @@
-# Game Ranking-service
+# Ranking Service
