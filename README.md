@@ -1,1 +1,1 @@
-# Smilegate-Ranking-service
+# Game Ranking-service
