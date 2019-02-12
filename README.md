@@ -1,3 +1,3 @@
 # Ranking Service
 > Used skill
-- JAVA, Spring Boot, Hibernate Framework, Gradle, Git
+- JAVA, Spring Boot, Hibernate, Freemarker, jQuery, Gradle, Git
